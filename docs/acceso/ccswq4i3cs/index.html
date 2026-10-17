@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Accesul tău · Bărbatul Magnetic</title>
+<style>
+  :root {
+    --bg: #FBF9F5;
+    --ink: #17130E;
+    --accent: #A63A2A;
+    --success: #37CA37;
+    --bg-alt: #F0EDE6;
+    --text-mid: #4a3f35;
+    --border: #ddd6cb;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--ink); font-family: 'Georgia', serif; min-height: 100vh; }
+
+  /* Header brand bar */
+  .brand-bar {
+    background: var(--ink);
+    color: #fff;
+    text-align: center;
+    padding: 12px 16px;
+    font-size: 13px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+  .brand-bar strong { color: var(--accent); }
+
+  .container {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 32px 16px 64px;
+  }
+
+  /* Success banner */
+  .success-banner {
+    background: #f0faf0;
+    border: 1.5px solid var(--success);
+    border-radius: 8px;
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 28px;
+  }
+  .success-banner .check {
+    width: 28px;
+    height: 28px;
+    background: var(--success);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #fff;
+    font-size: 15px;
+  }
+  .success-banner p {
+    font-size: 13px;
+    color: #2a6b2a;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+  }
+
+  h1 {
+    font-size: clamp(22px, 5vw, 30px);
+    line-height: 1.25;
+    margin-bottom: 8px;
+    color: var(--ink);
+  }
+  .subtitle {
+    font-size: 15px;
+    color: var(--text-mid);
+    font-family: 'Helvetica Neue', sans-serif;
+    margin-bottom: 32px;
+    line-height: 1.55;
+  }
+
+  /* Item cards */
+  .items { display: flex; flex-direction: column; gap: 16px; margin-bottom: 32px; }
+
+  .item-card {
+    background: #fff;
+    border: 1.5px solid var(--border);
+    border-radius: 10px;
+    padding: 20px 22px;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .item-icon {
+    width: 42px;
+    height: 42px;
+    background: var(--bg-alt);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    flex-shrink: 0;
+  }
+  .item-body { flex: 1; min-width: 0; }
+  .item-label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-family: 'Helvetica Neue', sans-serif;
+    margin-bottom: 4px;
+  }
+  .item-title {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 4px;
+  }
+  .item-desc {
+    font-size: 13px;
+    color: var(--text-mid);
+    font-family: 'Helvetica Neue', sans-serif;
+    line-height: 1.5;
+    margin-bottom: 14px;
+  }
+  .btn-access {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: 'Helvetica Neue', sans-serif;
+    transition: opacity 0.15s;
+  }
+  .btn-access:hover { opacity: 0.88; }
+
+  /* Bonus badge */
+  .bonus-badge {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 2px 7px;
+    border-radius: 3px;
+    margin-left: 6px;
+    vertical-align: middle;
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+
+  /* Guarantee note */
+  .guarantee-note {
+    background: var(--bg-alt);
+    border-radius: 8px;
+    padding: 16px 20px;
+    font-size: 13px;
+    color: var(--text-mid);
+    font-family: 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    text-align: center;
+  }
+  .guarantee-note strong { color: var(--ink); }
+
+  footer {
+    margin-top: 48px;
+    text-align: center;
+    font-size: 11px;
+    color: var(--border);
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+</style>
+</head>
+<body>
+
+<div class="brand-bar">
+  <strong>Bărbatul Magnetic™</strong>
+</div>
+
+<div class="container">
+
+  <div class="success-banner">
+    <div class="check">✓</div>
+    <p>Plată acceptată · Acces activ</p>
+  </div>
+
+  <h1>Accesul tău este pregătit.</h1>
+  <p class="subtitle">Tot ce ai comandat se află mai jos. Descarcă fiecare item și salvează-l pe dispozitivul tău — link-urile sunt permanente.</p>
+
+  <div class="items">
+
+    <!-- E-carte principală -->
+    <div class="item-card">
+      <div class="item-icon">📖</div>
+      <div class="item-body">
+        <div class="item-label">E-carte principală</div>
+        <div class="item-title">Bărbatul Magnetic — 7 Comutatoare™</div>
+        <div class="item-desc">6 capitole. Toate cele 7 comutatoare pas cu pas — de ce funcționează și exact ce să faci diferit.</div>
+        <a href="../../barbatul-magnetic/fab62sd3c4/" class="btn-access">Acces e-carte</a>
+      </div>
+    </div>
+
+    <!-- Bonus -->
+    <div class="item-card">
+      <div class="item-icon">🎁</div>
+      <div class="item-body">
+        <div class="item-label">Bonus E-carte <span class="bonus-badge">INCLUS GRATUIT</span></div>
+        <div class="item-title">Primele 90 de Secunde</div>
+        <div class="item-desc">Șase situații în care mereu te blochezi — fiecare dezvoltată propoziție cu propoziție. Deschide-l cu 2 minute înainte.</div>
+        <a href="../../primele-90-de-secunde/0qcupvjy8l/" class="btn-access">Acces bonus</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="guarantee-note">
+    <strong>Garanție 90 de zile.</strong> Dacă în 90 de zile nu ești mulțumit din orice motiv, îți returnăm 79 RON. Fără întrebări, fără formalități.
+  </div>
+
+</div>
+
+<footer>© 2026 Bărbatul Magnetic</footer>
+
+</body>
+</html>
